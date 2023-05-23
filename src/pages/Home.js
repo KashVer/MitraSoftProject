@@ -1,7 +1,25 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { getPostsFetch } from "../redux/actions";
 
 const Home = () => {
-  return <div></div>;
+  const dispatch = useDispatch();
+  const posts = useSelector((state) => state.postsReducer.posts);
+
+  useEffect(() => {
+    dispatch(getPostsFetch());
+  }, []);
+
+  return (
+    <>
+      <div>
+        Posts:
+        {posts.map((post) => {
+          return <div>{post.id}</div>;
+        })}
+      </div>
+    </>
+  );
 };
 
 export default Home;
