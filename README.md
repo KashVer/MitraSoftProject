@@ -4,13 +4,13 @@
 
 ## Ключевые технологии, которые необходимо использовать
 
-React
-React-bootstrap
-React-router
-Axios
-Redux
-Redux-saga
-Git
+* React
+* React-bootstrap
+* React-router
+* Axios
+* Redux
+* Redux-saga
+* Git
  
 
 ## Описание задачи
