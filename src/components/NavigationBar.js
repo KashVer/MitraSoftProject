@@ -2,6 +2,8 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Offcanvas from "react-bootstrap/Offcanvas";
+import Image from "react-bootstrap/Image";
+import avatar from "../img/avatar.jpg";
 
 const NavigationBar = () => {
   return (
@@ -19,11 +21,18 @@ const NavigationBar = () => {
                 Меню
               </Offcanvas.Title>
             </Offcanvas.Header>
-            <Offcanvas.Body>
-              <Nav className="justify-content-end flex-grow-1 pe-3">
+            <Offcanvas.Body className="d-flex flex-column justify-content-between">
+              <Nav>
                 <Nav.Link href="/">Список постов</Nav.Link>
                 <Nav.Link href="/aboutme">Обо мне</Nav.Link>
               </Nav>
+              <div>
+                <Image src={avatar} alt="мой аватар" className="img-fluid" />
+                <div>Вероника</div>
+                <a href={"mailto: veronika.kashkadova55@gmail.com"}>
+                  veronika.kashkadova55@gmail.com
+                </a>
+              </div>
             </Offcanvas.Body>
           </Navbar.Offcanvas>
         </Container>

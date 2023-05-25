@@ -9,7 +9,6 @@ import NavigationBar from "./components/NavigationBar";
 
 function App() {
   const location = useLocation();
-  console.log("location", location);
   return (
     <Container>
       {!location.pathname.includes("/userinfo") && <NavigationBar />}

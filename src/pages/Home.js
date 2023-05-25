@@ -6,6 +6,7 @@ import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
+import Spinner from "react-bootstrap/Spinner";
 import avatar from "../img/avatar.jpg";
 
 const Home = () => {
@@ -35,6 +36,16 @@ const Home = () => {
   const showUserInfo = (userId) => {
     navigate(`/userinfo/${userId}`);
   };
+
+  if (posts.length === 0) {
+    return (
+      <Spinner
+        animation="border"
+        variant="secondary"
+        className="d-flex justify-content-center mt-5"
+      />
+    );
+  }
 
   return (
     <>

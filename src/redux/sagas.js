@@ -44,6 +44,7 @@ function* workGetCommentsFetch() {
 }
 
 function* workGetUsersFetch() {
+  yield delay(500);
   const response = yield call(usersFetch);
   const users = response.data;
   yield put({ type: GET_USERS_SUCCESS, users });
