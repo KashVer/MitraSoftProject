@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/MitraSoftProject/static/css/main.c2cab247.css",
+    "main.js": "/MitraSoftProject/static/js/main.3ab438a2.js",
+    "static/media/avatar.jpg": "/MitraSoftProject/static/media/avatar.59365de9c73145714c64.jpg",
+    "index.html": "/MitraSoftProject/index.html",
+    "main.c2cab247.css.map": "/MitraSoftProject/static/css/main.c2cab247.css.map",
+    "main.3ab438a2.js.map": "/MitraSoftProject/static/js/main.3ab438a2.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c2cab247.css",
+    "static/js/main.3ab438a2.js"
+  ]
+}
